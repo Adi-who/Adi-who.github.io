@@ -29,7 +29,7 @@ npm run build
 
 ## Content
 
-Profile copy, socials, and skills come from the public GitHub profile. GitHub stats are fetched live from the GitHub API. Project cards stay empty until public repos exist.
+Profile copy, socials, and skills come from the public GitHub profile. GitHub stats are fetched live from the GitHub API. Featured projects include this portfolio and CodeSnap.
 
 ## Links
 

@@ -22,11 +22,11 @@ export const profile = {
     'I care about turning ideas into clean, functional websites — interfaces that feel considered, not decorated.',
   about: [
     'I am a student and developer based in India, focused on frontend and the modern web.',
-    'Right now I am building my personal portfolio and looking to collaborate on open source and web development projects.',
+    'I ship public work as I learn — this portfolio and CodeSnap are live — and I am looking to collaborate on open source and web development projects.',
     'I am learning in public: JavaScript, React, Git, GitHub, and Next.js — with a growing interest in motion and more advanced frontend work.',
   ],
   askMeAbout: ['HTML', 'CSS', 'JavaScript', 'Frontend Development'],
-  currentlyWorkingOn: 'Personal Portfolio Website',
+  currentlyWorkingOn: 'Frontend projects & open source',
   avatar: '/avatar.jpg',
   avatarRemote: 'https://avatars.githubusercontent.com/u/323292766?v=4',
   githubUrl: 'https://github.com/Adi-who',
@@ -58,7 +58,7 @@ export const navLinks = [
 
 export const skillGroups = [
   { title: 'Languages', items: ['C', 'C++', 'Java', 'JavaScript', 'Python'] },
-  { title: 'Frontend', items: ['HTML5', 'CSS3', 'React'] },
+  { title: 'Frontend', items: ['HTML5', 'CSS3', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'] },
   { title: 'Tools', items: ['Git', 'GitHub', 'VS Code'] },
   { title: 'Learning', items: ['JavaScript', 'React', 'Next.js', 'Advanced JavaScript', 'GSAP'] },
 ] as const
@@ -74,7 +74,24 @@ export const exploring = [
   'Modern Web Development',
 ] as const
 
-export const projects: Project[] = []
+export const projects: Project[] = [
+  {
+    title: 'CodeSnap',
+    description:
+      'A React app for creating beautiful, customizable code screenshots. Paste code, pick a theme and background, then export a high-resolution PNG for GitHub, LinkedIn, or blogs.',
+    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'html-to-image'],
+    github: 'https://github.com/Adi-who/CodeSnap',
+    live: 'https://adi-who.github.io/CodeSnap/',
+  },
+  {
+    title: 'Portfolio',
+    description:
+      'Personal site for Aditya Kumar — a dark, motion-led frontend built with React, TypeScript, Vite, and Tailwind. Live GitHub stats, project cards, and a contact path that stays out of the way.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Motion'],
+    github: 'https://github.com/Adi-who/Adi-who.github.io/tree/source',
+    live: 'https://adi-who.github.io',
+  },
+]
 
 export const comingSoonCopy =
   "I'm currently building and experimenting with new projects. Check back soon to see what I'm working on."

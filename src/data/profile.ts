@@ -10,11 +10,11 @@ export const profile = {
     'Student and frontend developer building modern, responsive web experiences. Currently focused on JavaScript, React, and Next.js.',
   about: [
     'I am a student and frontend developer based in India, focused on building modern, responsive web experiences.',
-    'I care about turning ideas into clean, functional interfaces. Right now I am working on my personal portfolio and looking to collaborate on open source and web development projects.',
+    'I care about turning ideas into clean, functional interfaces. I ship public work as I learn — this portfolio and CodeSnap are live — and I am looking to collaborate on open source and web development projects.',
     'Currently learning JavaScript, React, Git, and GitHub — with a growing interest in Next.js and more advanced frontend work.',
   ],
   askMeAbout: ['HTML', 'CSS', 'JavaScript', 'Frontend Development'],
-  currentlyWorkingOn: 'Personal Portfolio Website',
+  currentlyWorkingOn: 'Frontend projects & open source',
   currentlyLearning: ['JavaScript', 'React', 'Git', 'GitHub', 'Next.js'],
   lookingToCollaborate: 'Open source and web development projects',
   avatar: '/avatar.jpg',

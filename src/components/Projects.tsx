@@ -4,9 +4,9 @@ import { Reveal } from './Reveal'
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="rounded-3xl border border-line bg-bg-elevated p-6">
-      <h3 className="font-display text-2xl text-ink">{project.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-muted">{project.description}</p>
+    <article className="flex h-full flex-col rounded-3xl border border-line bg-bg-elevated p-6 transition-colors duration-200 hover:border-line-strong sm:p-8">
+      <h3 className="font-display text-2xl text-ink sm:text-3xl">{project.title}</h3>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{project.description}</p>
       <ul className="mt-5 flex flex-wrap gap-2">
         {project.technologies.map((tech) => (
           <li key={tech} className="rounded-full border border-line px-3 py-1 font-mono text-[11px] text-muted">
@@ -14,13 +14,25 @@ function ProjectCard({ project }: { project: Project }) {
           </li>
         ))}
       </ul>
-      <div className="mt-6 flex gap-3">
-        <a href={project.github} className="text-sm text-ink underline decoration-line-strong underline-offset-4">
+      <div className="mt-6 flex flex-wrap gap-4">
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-sm text-ink underline decoration-line-strong underline-offset-4 hover:text-accent"
+        >
           GitHub
+          <ArrowUpRight size={14} aria-hidden />
         </a>
         {project.live ? (
-          <a href={project.live} className="text-sm text-ink underline decoration-line-strong underline-offset-4">
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm text-ink underline decoration-line-strong underline-offset-4 hover:text-accent"
+          >
             Live
+            <ArrowUpRight size={14} aria-hidden />
           </a>
         ) : null}
       </div>
@@ -34,13 +46,17 @@ export function Projects() {
       <div className="mx-auto w-full max-w-6xl">
         <Reveal>
           <p className="font-mono text-[11px] tracking-[0.28em] text-accent uppercase">Projects</p>
-          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-ink sm:text-6xl">Work in progress.</h2>
+          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-ink sm:text-6xl">
+            Built and shipping.
+          </h2>
         </Reveal>
 
         {projects.length > 0 ? (
           <div className="mt-12 grid gap-4 md:grid-cols-2">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
+            {projects.map((project, index) => (
+              <Reveal key={project.title} delay={index * 0.06}>
+                <ProjectCard project={project} />
+              </Reveal>
             ))}
           </div>
         ) : (
