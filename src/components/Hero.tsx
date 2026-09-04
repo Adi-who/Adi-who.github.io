@@ -14,6 +14,7 @@ const socialIcons = [
 
 export function Hero() {
   const reduced = useReducedMotion()
+  const kicker = `${profile.name} — ${profile.role}`
 
   return (
     <section id="home" className="relative overflow-hidden px-5 pt-28 pb-16 sm:px-8 lg:min-h-dvh lg:px-10">
@@ -21,13 +22,26 @@ export function Hero() {
 
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-10 lg:min-h-[calc(100dvh-7rem)] lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
         <div>
-          <motion.p
-            initial={reduced ? false : { opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mb-6 font-mono text-[11px] tracking-[0.28em] text-accent uppercase"
+          <p
+            aria-label={kicker}
+            className="mb-6 font-mono text-[clamp(0.95rem,2.8vw,1.4rem)] leading-snug tracking-[0.22em] text-accent uppercase"
           >
-            {profile.name} — {profile.role}
-          </motion.p>
+            {kicker.split('').map((char, index) => (
+              <motion.span
+                key={`${char}-${index}`}
+                className="inline-block will-change-transform"
+                initial={reduced ? false : { y: '0.6em', opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0.02 + index * 0.028,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </motion.span>
+            ))}
+          </p>
 
           <AnimatedHeading lines={profile.headline} />
 
