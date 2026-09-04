@@ -37,4 +37,4 @@ Profile copy, socials, and skills come from the public GitHub profile. GitHub st
 - Profile: https://github.com/Adi-who
 - X: https://x.com/AdiXplores
 - Instagram: https://instagram.com/v27adi
-- Email: adityasinghhzb2005@gmail.com
+- Email: iamadityakumar.dev@gmail.com

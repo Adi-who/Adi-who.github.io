@@ -30,7 +30,7 @@ export const profile = {
   avatar: '/avatar.jpg',
   avatarRemote: 'https://avatars.githubusercontent.com/u/323292766?v=4',
   githubUrl: 'https://github.com/Adi-who',
-  email: 'adityasinghhzb2005@gmail.com',
+  email: 'iamadityakumar.dev@gmail.com',
   joined: 'August 2026',
 } as const
 
@@ -40,8 +40,8 @@ export const social = {
   instagram: { label: 'Instagram', handle: '@v27adi', href: 'https://instagram.com/v27adi' },
   email: {
     label: 'Email',
-    handle: 'adityasinghhzb2005@gmail.com',
-    href: 'mailto:adityasinghhzb2005@gmail.com',
+    handle: 'iamadityakumar.dev@gmail.com',
+    href: 'mailto:iamadityakumar.dev@gmail.com',
   },
 } as const
 

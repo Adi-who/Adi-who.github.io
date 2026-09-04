@@ -20,7 +20,7 @@ export const profile = {
   avatar: '/avatar.jpg',
   avatarRemote: 'https://avatars.githubusercontent.com/u/323292766?v=4',
   githubUrl: 'https://github.com/Adi-who',
-  email: 'adityasinghhzb2005@gmail.com',
+  email: 'iamadityakumar.dev@gmail.com',
   instagram: {
     handle: 'v27adi',
     url: 'https://instagram.com/v27adi',
