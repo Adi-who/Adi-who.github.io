@@ -1,10 +1,10 @@
 # Aditya Kumar — Portfolio
 
+Live site: **[adi-who.github.io](https://adi-who.github.io)**
+
 Personal developer portfolio for **Aditya Kumar** ([@Adi-who](https://github.com/Adi-who)).
 
-Live site: https://adi-who.github.io
-
-Content is sourced from the public GitHub profile. Stats are fetched live from the GitHub API.
+This branch contains the source. GitHub Pages serves the production build from `main`.
 
 ## Stack
 
@@ -26,3 +26,15 @@ npm run dev
 # Production build
 npm run build
 ```
+
+## Content
+
+Profile copy, socials, and skills come from the public GitHub profile. GitHub stats are fetched live from the GitHub API. Project cards stay empty until public repos exist.
+
+## Links
+
+- Site: https://adi-who.github.io
+- Profile: https://github.com/Adi-who
+- X: https://x.com/AdiXplores
+- Instagram: https://instagram.com/v27adi
+- Email: adityasinghhzb2005@gmail.com
