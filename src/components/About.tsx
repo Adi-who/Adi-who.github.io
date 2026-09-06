@@ -1,4 +1,4 @@
-import { profile } from '../data/portfolio'
+import { profile, social } from '../data/portfolio'
 import { Reveal } from './Reveal'
 
 const facts = [
@@ -41,6 +41,26 @@ export function About() {
                 </div>
               ))}
             </dl>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 items-center text-muted underline decoration-line-strong underline-offset-4 hover:text-ink"
+              >
+                GitHub
+              </a>
+              <a
+                href={social.linkedin.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 items-center text-muted underline decoration-line-strong underline-offset-4 hover:text-ink"
+              >
+                LinkedIn
+              </a>
+            </div>
           </Reveal>
         </div>
       </div>

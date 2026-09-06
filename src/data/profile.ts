@@ -20,6 +20,7 @@ export const profile = {
   avatar: '/avatar.jpg',
   avatarRemote: 'https://avatars.githubusercontent.com/u/323292766?v=4',
   githubUrl: 'https://github.com/Adi-who',
+  linkedinUrl: 'https://www.linkedin.com/in/adiwho-dev/',
   email: 'iamadityakumar.dev@gmail.com',
   instagram: {
     handle: 'v27adi',
@@ -29,12 +30,17 @@ export const profile = {
     handle: 'AdiXplores',
     url: 'https://x.com/AdiXplores',
   },
+  linkedin: {
+    handle: 'adiwho-dev',
+    url: 'https://www.linkedin.com/in/adiwho-dev/',
+  },
   joined: 'August 2026',
   githubUserId: 323292766,
 } as const
 
 export const socials = [
   { id: 'github', label: 'GitHub', handle: '@Adi-who', href: profile.githubUrl },
+  { id: 'linkedin', label: 'LinkedIn', handle: 'adiwho-dev', href: profile.linkedin.url },
   { id: 'instagram', label: 'Instagram', handle: '@v27adi', href: profile.instagram.url },
   { id: 'email', label: 'Gmail', handle: profile.email, href: `mailto:${profile.email}` },
   { id: 'x', label: 'X', handle: '@AdiXplores', href: profile.x.url },

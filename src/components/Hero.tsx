@@ -2,11 +2,12 @@ import { ArrowDownRight } from 'lucide-react'
 import { motion, useReducedMotion } from 'motion/react'
 import { profile, social } from '../data/portfolio'
 import { AnimatedHeading } from './AnimatedHeading'
-import { GitHubIcon, InstagramIcon, MailIcon, XIcon } from './icons'
+import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, XIcon } from './icons'
 import { SocialDock } from './SocialDock'
 
 const socialIcons = [
   { ...social.github, Icon: GitHubIcon },
+  { ...social.linkedin, Icon: LinkedInIcon },
   { ...social.x, Icon: XIcon },
   { ...social.instagram, Icon: InstagramIcon },
   { ...social.email, Icon: MailIcon },

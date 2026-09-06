@@ -2,7 +2,7 @@ import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { navLinks, profile, social } from '../data/portfolio'
 import { useActiveSection } from '../hooks/useActiveSection'
-import { GitHubIcon, XIcon } from './icons'
+import { GitHubIcon, LinkedInIcon, XIcon } from './icons'
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
@@ -62,6 +62,15 @@ export function Navbar() {
             aria-label="GitHub"
           >
             <GitHubIcon size={15} />
+          </a>
+          <a
+            href={social.linkedin.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden h-11 w-11 items-center justify-center rounded-full border border-line text-ink sm:inline-flex"
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon size={15} />
           </a>
           <a
             href={social.x.href}

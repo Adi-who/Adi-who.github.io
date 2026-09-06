@@ -1,10 +1,11 @@
 import { ArrowUpRight } from 'lucide-react'
 import { social, socials } from '../data/portfolio'
-import { GitHubIcon, InstagramIcon, MailIcon, XIcon } from './icons'
+import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, XIcon } from './icons'
 import { Reveal } from './Reveal'
 
 const iconMap = {
   GitHub: GitHubIcon,
+  LinkedIn: LinkedInIcon,
   X: XIcon,
   Instagram: InstagramIcon,
   Email: MailIcon,

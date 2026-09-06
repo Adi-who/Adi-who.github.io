@@ -30,12 +30,18 @@ export const profile = {
   avatar: '/avatar.jpg',
   avatarRemote: 'https://avatars.githubusercontent.com/u/323292766?v=4',
   githubUrl: 'https://github.com/Adi-who',
+  linkedinUrl: 'https://www.linkedin.com/in/adiwho-dev/',
   email: 'iamadityakumar.dev@gmail.com',
   joined: 'August 2026',
 } as const
 
 export const social = {
   github: { label: 'GitHub', handle: '@Adi-who', href: 'https://github.com/Adi-who' },
+  linkedin: {
+    label: 'LinkedIn',
+    handle: 'adiwho-dev',
+    href: 'https://www.linkedin.com/in/adiwho-dev/',
+  },
   x: { label: 'X', handle: '@AdiXplores', href: 'https://x.com/AdiXplores' },
   instagram: { label: 'Instagram', handle: '@v27adi', href: 'https://instagram.com/v27adi' },
   email: {
@@ -45,7 +51,7 @@ export const social = {
   },
 } as const
 
-export const socials = [social.github, social.x, social.instagram, social.email] as const
+export const socials = [social.github, social.linkedin, social.x, social.instagram, social.email] as const
 
 export const navLinks = [
   { label: 'Home', href: '#home' },
