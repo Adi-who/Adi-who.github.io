@@ -24,6 +24,7 @@ Profile copy, socials, and skills come from the public GitHub profile. GitHub st
 
 - Site: https://adi-who.github.io
 - Profile: https://github.com/Adi-who
+- LinkedIn: https://www.linkedin.com/in/adiwho-dev/
 - X: https://x.com/AdiXplores
 - Instagram: https://instagram.com/v27adi
 - Email: iamadityakumar.dev@gmail.com
